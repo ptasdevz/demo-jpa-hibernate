@@ -1,6 +1,6 @@
 package com.ptasdevz.demojpahibernate.entites;
 
-import com.ptasdevz.demojpahibernate.FileEntityListener;
+import com.ptasdevz.demojpahibernate.FileEntityListner;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Setter
 @Component
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-@EntityListeners(FileEntityListener.class)
+@EntityListeners(FileEntityListner.FileEntityListener.class)
 public class File extends Auditable<String> {
 
     @Id

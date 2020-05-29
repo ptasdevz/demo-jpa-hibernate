@@ -1,6 +1,7 @@
 package com.ptasdevz.demojpahibernate.entites;
 
 public enum Action {
+
     INSERTED("INSERTED"),
     UPDATED("UPDATED"),
     DELETED("DELETED");

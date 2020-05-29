@@ -18,6 +18,7 @@ import java.util.Date;
 @Getter
 @Setter
 @EntityListeners(AuditingEntityListener.class)
+
 public abstract class Auditable<U> {
 
     @CreatedBy
