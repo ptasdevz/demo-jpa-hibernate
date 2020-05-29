@@ -18,7 +18,8 @@ import java.util.Date;
 @Getter
 @Setter
 @EntityListeners(AuditingEntityListener.class)
-public abstract class Auitable<U> {
+
+public abstract class Auditable<U> {
 
     @CreatedBy
     protected U createdBy;
@@ -31,6 +32,6 @@ public abstract class Auitable<U> {
     protected U lastModifiedBy;
 
     @LastModifiedDate
-    @Temporal()
-    protected Date lastModifiedDate
+    @Temporal(TemporalType.TIMESTAMP)
+    protected Date lastModifiedDate;
 }
