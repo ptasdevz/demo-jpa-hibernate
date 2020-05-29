@@ -29,11 +29,11 @@ public class FileEntityListener {
         perform(file,Action.INSERTED);
         LOGGER.info("{}", "just after insert");
     }
-    @PostRemove
-    public void postRemove(File file){
-        perform(file,Action.DELETED);
-        LOGGER.info("{}", "just after remove");
-    }
+//    @PostRemove
+//    public void postRemove(File file){
+//        perform(file,Action.DELETED);
+//        LOGGER.info("{}", "just after remove");
+//    }
     @PostUpdate
     public void postUpdate(File file){
         perform(file,Action.UPDATED);
